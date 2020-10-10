@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BURGERS!</title>
-</head>
-<body>
-    {{{ body }}}
-</body>
-</html>
+<h1>Eat Da Burger!</h1>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        <p>
+            {{this.id}}.{{this.buger_name}}
+            <button data-bugersid="{{this.id}}" class="devourburger">Devour</button>
+        </p>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>What Burger do you want to eat?</h2>
+<form id="addburger" class="button-size">
+    <textarea type ="text" name="burger"></textarea>
+    <button type="submit">Add Burger</button>
+</form>
+
+
