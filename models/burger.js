@@ -1,6 +1,6 @@
-const orm = require("../../../config/orm");
+const orm = require("../config/orm");
 
-var bugers = {
+var burgers = {
     selectAll: function (cb) {
         orm.selectAll("burgers", cols, vals, function (res){
             cb(res);
@@ -13,4 +13,4 @@ var bugers = {
     },
 };
 
-module.exports = burger;
+module.exports = burgers;
