@@ -4,7 +4,7 @@ $(function() {
       var newSleep = $(this).data("newsleep");
   
       var newBurgers = {
-        devour: newDevour
+      name: $("#yourburger [name=burger_name]").val().trim(),
       };
   
       // Send the PUT request.
